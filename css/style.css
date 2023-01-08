@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 
-body {
-    background: #111;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +9,6 @@ body {
 
 body {
     width: 100%;
-    height: 100%;
     background-color: #111111 !important;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +31,6 @@ header {
     align-items: center;
     position: relative;
     background-color: transparent;
-
 }
 
 header h1 {
@@ -62,6 +56,10 @@ a {
     transition: 0.2s ease-in-out;
 }
 
+.purple {
+    color: #a47afb;
+}
+
 .hover-letras {
     color: #00e0ff;
     transition: 0.2s ease-in-out;
@@ -69,7 +67,6 @@ a {
 
 .hover-letras:hover {
     color: #f2f2f2;
-
 }
 
 .hover-letras-green {
@@ -79,7 +76,6 @@ a {
 
 .hover-letras-green:hover {
     color: #f2f2f2;
-
 }
 
 header h1:hover,
@@ -91,7 +87,6 @@ a:hover {
 
 .home {
     width: 100%;
-    height: 85vh;
     background-image: url(../img/11156488.png);
     background-position: center;
     background-size: cover;
@@ -102,7 +97,6 @@ a:hover {
 }
 
 .console-container {
-
     font-family: Khula;
     font-size: 5em;
     text-align: center;
@@ -125,14 +119,13 @@ a:hover {
     left: 10px;
 }
 
+/* bout-me  */
 .bout-me {
     padding: 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-/* bout-me  */
 
 #bout-me p {
     color: #f2f2f2;
@@ -162,16 +155,23 @@ a:hover {
     box-shadow: 0px 0px 8px #00e0ff;
 }
 
+.video {
+    width: 100%;
+}
+
+.frame {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+}
+
 /* img  */
 
 .teste {
     text-align: end;
-    /* width: 380px; */
     height: 500px;
     left: 947px;
     top: 170px;
-    /* USE */
-    /* background: linear-gradient(90deg, #89347C 0%, #521D82 100%); */
     background-image: url(../img/alone2.jpg);
     border-radius: 13px;
     box-shadow: 0px 0px 8px #00e0ff;
@@ -192,16 +192,15 @@ figure figcaption {
 }
 
 .about {
-    font-size: 24px;
-
+    font-size: 22px;
+    color: white;
 }
 
-/* ////////////////////////////////////////////////////////  animation   */
+/* animation */
 
 :root {
     --marquee-width: 40vw;
     --marquee-height: 10vh;
-    /* --marquee-elements: 12; */
     /* defined with JavaScript */
     --marquee-elements-displayed: 5;
     --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
@@ -235,12 +234,10 @@ figure figcaption {
 
 .marquee:before {
     left: 0;
-    /* background: linear-gradient(to right, #111 0%, transparent 100%); */
 }
 
 .marquee:after {
     right: 0;
-    /* background: linear-gradient(to left, #111 0%, transparent 100%); */
 }
 
 .marquee-content {
@@ -250,9 +247,6 @@ figure figcaption {
     animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
-/* .marquee-content:hover {
-    animation-play-state: paused;
-  } */
 @keyframes scrolling {
     0% {
         transform: translateX(0);
@@ -267,34 +261,91 @@ figure figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
     flex-shrink: 0;
     width: var(--marquee-element-width);
     max-height: 100%;
     font-size: calc(var(--marquee-height)*3/4);
-    /* 5rem; */
     white-space: nowrap;
 }
 
 .marquee-content li img {
     width: 100%;
-    /* height: 100%; */
     border: 2px solid #eee;
 }
 
-@media (max-width: 600px) {
-    html {
+
+@media (max-width: 991px) {
+    .home {
+        width: 100%;
+        height: 240px !important;
+        background-image: url(../img/11156488.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    body {
+        width: 100%;
+        background-color: #111111 !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .about {
         font-size: 12px;
+        color: white;
     }
 
     :root {
-        --marquee-width: 100vw;
-        --marquee-height: 16vh;
-        --marquee-elements-displayed: 3;
+        --marquee-width: 86vw;
+        --marquee-height: 7vh;
+        --marquee-elements-displayed: 5;
     }
 
     .marquee:before,
     .marquee:after {
-        width: 5rem;
+        width: 10px;
+    }
+
+    .console-container {
+        font-family: Khula;
+        font-size: 1em;
+        text-align: center;
+        height: 4px !important;
+        width: 2px !important;
+        display: block;
+        position: relative;
+        color: white;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .teste {
+        width: 350px !important;
+        height: 415px;
+        background-image: url(../img/alone2.jpg);
+        border-radius: 13px;
+        box-shadow: 0px 0px 8px #00e0ff;
+    }
+
+    .lol {
+        width: 350px !important;
+        height: 415px;
+        background-image: url(../img/akali2.png);
+        border-radius: 13px;
+        box-shadow: 0px 0px 8px #7c825b;
+    }
+
+    .frame {
+        border-radius: 15px;
+        width: 350px;
+        height: 240px;
     }
 }
