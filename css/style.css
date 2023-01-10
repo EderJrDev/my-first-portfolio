@@ -234,19 +234,21 @@ figure figcaption {
 
 .channel-list li {
     list-style: none;
+    transition: transform .3s;
 }
 
 .channel-list img {
     border-radius: 50%;
     width: 130px;
     border: 1px solid #443e54;
-}
+    box-shadow: 0px 0px 8px #ae362c;
 
+}
+/* 
 sectionul li {
-    transition: transform .3s;
-}
+} */
 
-section ul li:hover {
+.channel-list li:hover {
     transform: scale(1.1);
 }
 

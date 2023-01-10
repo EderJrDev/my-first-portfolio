@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -95,7 +96,7 @@
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -118,13 +119,13 @@
                 <div class="col-lg-6">
                     <figure>
                         <div class="container">
-                            <div class="lol"></div>
+                            <div class="lol" data-aos="zoom-out-right" data-aos-duration="3000"></div>
                             <figcaption class="pt-3">League of Legends</figcaption>
                         </div>
                     </figure>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="3000">
                     <article class="text">
                         <h2 class="hover-letras-green">Let's Play ?</h2>
                         <p class="about text-white">
@@ -134,8 +135,8 @@
                     <aside class="techs">
                         <h2 class="hover-letras-green pb-3">Me add lá</h2>
                         <p class="about text-white">
-                            Sempre gostei de jogos de estratégia e em grupo, e o Lol tem bastante disso
-                            Claro que tem partidas que a Akali tem de fazer milagres...dizem que eu sou ruim, mas
+                            Sempre gostei de jogos de estratégia e em grupo, e o Lol tem bastante disso, mas
+                            claro que tem partidas que a Akalizinha tem de fazer milagres...dizem que eu sou ruim, mas
                             isso ai é só detalhe(risos).
                         </p>
                     </aside>
@@ -148,7 +149,7 @@
         </div>
     </section>
 
-    <section class="bout-me">
+    <section class="bout-me" data-aos="zoom-in-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -206,7 +207,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="text-center text-white">
         <span>
             &copy; Eder Junior, 2022 - Todos os direitos reservados.
         </span>
@@ -215,6 +216,10 @@
     <script src="https://kit.fontawesome.com/4d7ea2c507.js" crossorigin="anonymous" defer></script>
     <!-- ACTIONS -->
     <script src="js/actions.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 
