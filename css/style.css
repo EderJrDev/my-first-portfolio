@@ -7,6 +7,10 @@
     font-family: 'Montserrat';
 }
 
+html {
+    overflow-x: hidden !important;
+}
+
 body {
     width: 100%;
     background-color: #111111 !important;
@@ -40,9 +44,6 @@ body::-webkit-scrollbar-thumb
 	background-color: #474c50;
 }
 
-
-
-
 a {
     text-decoration: none;
     color: #f2f2f2 !important;
@@ -55,7 +56,6 @@ header {
     align-items: center;
     position: relative;
     background-color: transparent;
-
 }
 
 header h1 {
